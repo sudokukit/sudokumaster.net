@@ -1,0 +1,79 @@
+body {
+    background-color: #ffffff;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.8em;
+}
+
+div.difficulty {
+    text-align: center;
+}
+
+.stars i.star {
+    font-size: 50px;
+    margin: 0px 5px;
+}
+
+.difficultyButtons {
+    text-align: center;
+}
+
+.difficultyButtons button.selected {
+    background-color:blue;
+}
+
+.puzzle table {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.puzzle table td {
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    width: 50px;
+    height: 44px;
+    border: 1px solid #000000;
+}
+
+.puzzle table td.selected {
+    background-color: #bff;
+}
+
+.puzzle table td span.given {
+    font-weight: bold;
+}
+
+.puzzle td:first-child {
+    border-left: solid;
+}
+
+.puzzle td:nth-child(3n) {
+    border-right: solid;
+}
+
+.puzzle tr:first-child {
+    border-top: solid;
+}
+
+.puzzle tr:nth-child(3n) td {
+    border-bottom: solid;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    margin: 10px;
+}
