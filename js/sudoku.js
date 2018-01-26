@@ -218,7 +218,6 @@ sudoku.controller('sudokuController', ['$scope', '$http', 'hotkeys', function ($
             + '&solution=' + $scope.puzzleToString()
         }).then(function successCallback(response) {
             $scope.setPuzzle(response.data);
-            console.log('got hints');
         }, function errorCallback(response) {
         });
     };
