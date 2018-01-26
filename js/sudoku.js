@@ -204,7 +204,7 @@ sudoku.controller('sudokuController', ['$scope', '$http', 'hotkeys', function ($
     $scope.newGame = function () {
         $http({
             method: 'GET',
-            url   : apiUrl + '/api/puzzles?difficulty=' + $scope.preferredDifficulty.level
+            url   : apiUrl + '/puzzles?difficulty=' + $scope.preferredDifficulty.level
         }).then(function successCallback(response) {
             $scope.setPuzzle(response.data);
         }, function errorCallback(response) {
@@ -214,7 +214,7 @@ sudoku.controller('sudokuController', ['$scope', '$http', 'hotkeys', function ($
     $scope.getHelp = function () {
         $http({
             method: 'GET',
-            url   : apiUrl + '/api/hints?difficulty=' + $scope.preferredDifficulty.level
+            url   : apiUrl + '/hints?difficulty=' + $scope.preferredDifficulty.level
             + '&solution=' + $scope.puzzleToString()
         }).then(function successCallback(response) {
             $scope.setPuzzle(response.data);
@@ -226,7 +226,7 @@ sudoku.controller('sudokuController', ['$scope', '$http', 'hotkeys', function ($
     $scope.validate = function () {
         $http({
             method: 'GET',
-            url   : apiUrl + '/api/solutions?solution=' + $scope.puzzleToString()
+            url   : apiUrl + '/solutions?solution=' + $scope.puzzleToString()
         }).then(function successCallback(response) {
             $scope.result = response.data.result;
         }, function errorCallback(response) {
